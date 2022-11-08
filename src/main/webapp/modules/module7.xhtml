@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      >
+    <h:head>
+        <title>KasuProject-4</title>
+        <!--<link rel="stylesheet" href="index.css" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </h:head>
+    <h:body>
+        username: #{user.name}<br/>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+              <h1></h1>
+            </div>
+          </div>
+          
+        <h:form class="form">
+            
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">STUDENT SELF EVALUATION</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        26. I contributed constructively during in-class activities.
+                    </td>
+                    <td>
+                        <h:selectOneRadio value="#{module7.q1}">
+                            <f:selectItem itemValue="Strongly Agree" itemLabel="Strongly Agree" />
+                            <f:selectItem itemValue="Agree" itemLabel="Agree" />
+                            <f:selectItem itemValue="Neutral" itemLabel="Neutral" />
+                            <f:selectItem itemValue="Disagree" itemLabel="Disagree" />
+                            <f:selectItem itemValue="Strongly Disagree" itemLabel="Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        27. I feel I am achieving the learning outcomes.
+                    </td>
+                    <td>
+                        <h:selectOneRadio value="#{module7.q2}">
+                            <f:selectItem itemValue="Strongly Agree" itemLabel="Strongly Agree" />
+                            <f:selectItem itemValue="Agree" itemLabel="Agree" />
+                            <f:selectItem itemValue="Neutral" itemLabel="Neutral" />
+                            <f:selectItem itemValue="Disagree" itemLabel="Disagree" />
+                            <f:selectItem itemValue="Strongly Disagree" itemLabel="Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Comments (Student Self Evaluation) 
+                    </td>
+                    <td>
+                        <h:inputTextarea id="txtComments" value="#{module7.q3}"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        <h:commandButton id="cmdNext" class="btn btn-primary btn-lg btn-block" value="NEXT" action="#{module7.next}" />
+    </h:form>
+    </h:body>
+</html>
+

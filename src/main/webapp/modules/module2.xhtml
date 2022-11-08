@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      >
+    <h:head>
+        <title>KasuProject-4</title>
+        <!--<link rel="stylesheet" href="index.css" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </h:head>
+    <h:body>
+        username: #{user.name}<br/>
+        <div class="container">
+            <div class="row justify-content-center">
+              <h1></h1>
+            </div>
+          </div>
+        <h:form class="form">
+            
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">TEACHING APPROACHES</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        9. The instructor was accessible outside of class.
+                    </td>
+                    <td>
+                        <h:selectOneRadio value="#{module2.q1}">
+                            <f:selectItem itemValue="Yes" itemLabel="Yes" />
+                            <f:selectItem itemValue="No" itemLabel="No" />
+                        </h:selectOneRadio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        10. Did the instructor actively attempt to prevent
+                    </td>
+                    <td>
+                        <h:selectOneRadio value="#{module2.q2}">
+                            <f:selectItem itemValue="Yes" itemLabel="Yes" />
+                            <f:selectItem itemValue="No" itemLabel="No" />
+                        </h:selectOneRadio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Comments (Teaching Approaches) 
+                    </td>
+                    <td>
+                        <h:inputTextarea id="txtComments" value="#{module2.q3}"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        <h:commandButton id="cmdNext" class="btn btn-primary btn-lg btn-block" value="NEXT" action="#{module2.next}" />
+    </h:form>
+    </h:body>
+</html>
+

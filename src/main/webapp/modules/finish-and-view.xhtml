@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      >
+    <h:head>
+        <title>KasuProject-4</title>
+        <!--<link rel="stylesheet" href="index.css" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </h:head>
+    <h:body>
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1>Evaluation Summary</h1>
+        </div>
+      </div>
+
+        <h:form class="form">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Evaluation</th>
+                    <th scope="col">Response</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1. The instructor stimulated my interest in the subject.</td>
+                    <td>#{module1.q1}</td>
+                  </tr>
+
+                  <tr>
+                    <td>2. The instructor managed classroom time and pace well.</td>
+                    <td>#{module1.q2}</td>
+                  </tr>
+
+                  <tr>
+                    
+                    <td>
+                      3. The instructor was organized and prepared forv every class.
+                  </td>
+                    <td>#{module1.q3}</td>
+                  </tr>
+
+                  <tr>
+                    
+                    <td>
+                      4. The instructor encouraged discussions and responded to questions.
+                  </td>
+                    <td>#{module1.q4}</td>
+                  </tr>
+
+                  <tr>
+                    
+                    <td>5. The instructor demonstrated in-depth knowledge of the subject.</td>
+                    <td>#{module1.q5}</td>
+                  </tr>
+
+                  <tr>
+                    
+                    <td>6. The instructor appeared enthusiastic and interested.</td>
+                    <td>#{module1.q6}</td>
+                  </tr>
+
+                  <tr>
+                    
+                    <td>7. The instructor used a variety of instructional methods to reach the course objectives (e.g. group discussions, student presentations, etc.)</td>
+                    <td>#{module1.q7}</td>
+                  </tr>
+
+                  <tr>
+                    
+                    <td>8. The instructor challenged students to do their best work.</td>
+                    <td>#{module1.q8}</td>
+                  </tr>
+
+                  <tr>
+                    <td>9. The instructor was accessible outside of class.</td>
+                    <td>#{module2.q1}</td>
+                  </tr>
+
+                  <tr>
+                    <td>10. Did the instructor actively attempt to prevent cheating in this course?</td>
+                    <td>#{module2.q2}</td>
+                  </tr>
+
+                  <tr>
+                    <td>Comments (Teaching Approaches)</td>
+                    <td>#{module2.q3}</td>
+                  </tr>
+
+                  <tr>
+                    <td>11. Information about the assessment was communicated clearly.</td>
+                    <td>#{module3.q1}</td>
+                  </tr>
+
+                  <tr>
+                    <td>12. Feedback was provided within the stated timeframe.</td>
+                    <td>#{module3.q2}</td>
+                  </tr>
+                  <tr>
+                    <td>13. Feedback showed how to improve my work(e .g. corrections including comments).</td>
+                    <td>#{module3.q3}</td>
+                  </tr>
+                  <tr>
+                    <td>Comments (Feedback and Assessment)</td>
+                    <td>#{module3.q4}</td>
+                  </tr>
+
+                  <tr>
+                    <td>14. The course was supported by adequate library resources.</td>
+                    <td>#{module4.q1}</td>
+                  </tr>
+                  <tr>
+                    <td>15. Blackboard resources for the course were useful.</td>
+                    <td>#{module4.q2}</td>
+                  </tr>
+                  <tr>
+                    <td>16. Instructor gave guidance on where to find resources.</td>
+                    <td>#{module4.q3}</td>
+                  </tr>
+                  <tr>
+                    <td>Comments (Resources and Administration)</td>
+                    <td>#{module4.q4}</td>
+                  </tr>
+
+                  <tr>
+                    <td>17. The syllabus was explained at the beginning of the course.</td>
+                    <td>#{module5.q1}</td>
+                  </tr>
+
+                  <tr>
+                    <td>18. The course was delivered as outlined in the syllabus.</td>
+                    <td>#{module5.q2}</td>
+                  </tr>
+
+                  <tr>
+                    <td>19. Instructor explained the grading criteria of the course.</td>
+                    <td>#{module5.q3}</td>
+                  </tr>
+
+                  <tr>
+                    <td>20. Exams related to the course learning outcomes.</td>
+                    <td>#{module5.q4}</td>
+                  </tr>
+
+                  <tr>
+                    <td>21. Projects/ assignments related to the course learning outcomes.</td>
+                    <td>#{module5.q5}</td>
+                  </tr>
+                  <tr>
+                    <td>Comments (Additional Questions)</td>
+                    <td>#{module5.q6}</td>
+                  </tr>
+                  <tr>
+                    <td>22. This was a worthwhile class.</td>
+                    <td>#{module6.q1}</td>
+                  </tr>
+                  <tr>
+                    <td>23. Would you recommend this course to a fellow student</td>
+                    <td>#{module6.q2}</td>
+                  </tr>
+                  <tr>
+                    <td>24. Overall, how do you rate your experience in this course?</td>
+                    <td>#{module6.q3}</td>
+                  </tr>
+                  <tr>
+                    <td>25. How many hours did you spend per week on preparation/homework for this course?</td>
+                    <td>#{module6.q4}</td>
+                  </tr>
+                  <tr>
+                    <td>Comments (Student Self Evaluation) </td>
+                    <td>#{module6.q5}</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>26. I contributed constructively during in-class activities.</td>
+                    <td>#{module7.q1}</td>
+                  </tr>
+                  <tr>
+                    <td>27. I feel I am achieving the learning outcomes.</td>
+                    <td>#{module7.q2}</td>
+                  </tr>
+                  <tr>
+                    <td>Comments (Student Self Evaluation)</td>
+                    <td>#{module7.q3}</td>
+                  </tr>
+                  <tr>
+                    <td>▪ What changes would you recommend to improve this course?</td>
+                    <td>#{module8.q1}</td>
+                  </tr>
+                  <tr>
+                    <td>▪ What did you like best about your instructors teaching?</td>
+                    <td>#{module8.q2}</td>
+                  </tr>
+                  <tr>
+                    <td>▪ What did you like least about your instructor's teaching?</td>
+                    <td>#{module8.q3}</td>
+                  </tr>
+                  <tr>
+                    <td>▪ Any further, constructive comment:</td>
+                    <td>#{module8.q4}</td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+              
+        <h:commandButton id="cmdHome" class="btn btn-primary btn-lg btn-block" value="Home" action="#{module8.home}" />
+        <h:commandButton id="cmdLogout" class="btn btn-secondary btn-lg btn-block" value="Logout" action="#{user.logout}" />
+
+    </h:form>
+    </h:body>
+</html>
+

@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      >
+    <h:head>
+        <title>KasuProject-4</title>
+        <!--<link rel="stylesheet" href="index.css" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </h:head>
+    <h:body>
+        username: #{user.name}<br/>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+              <h1></h1>
+            </div>
+          </div>
+
+        <h:form class="form">
+            
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">OVERALL EXPERIENCE</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        22. This was a worthwhile class.
+                    </td>
+                    <td>
+                        <h:selectOneRadio value="#{module6.q1}">
+                            <f:selectItem itemValue="Strongly Agree" itemLabel="Strongly Agree" />
+                            <f:selectItem itemValue="Agree" itemLabel="Agree" />
+                            <f:selectItem itemValue="Neutral" itemLabel="Neutral" />
+                            <f:selectItem itemValue="Disagree" itemLabel="Disagree" />
+                            <f:selectItem itemValue="Strongly Disagree" itemLabel="Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        23. Would you recommend this course to a fellow student
+                    </td>
+                    <td>
+                        <h:selectOneRadio value="#{module6.q2}">
+                            <f:selectItem itemValue="Strongly Agree" itemLabel="Strongly Agree" />
+                            <f:selectItem itemValue="Agree" itemLabel="Agree" />
+                            <f:selectItem itemValue="Neutral" itemLabel="Neutral" />
+                            <f:selectItem itemValue="Disagree" itemLabel="Disagree" />
+                            <f:selectItem itemValue="Strongly Disagree" itemLabel="Strongly Disagree" />
+                        </h:selectOneRadio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        24. Overall, how do you rate your experience in this course?
+                    </td>
+                    <td>
+                        <h:selectOneRadio value="#{module6.q3}">
+                            <f:selectItem itemValue="Excellent" itemLabel="Excellent" />
+                            <f:selectItem itemValue="Very good" itemLabel="Very good" />
+                            <f:selectItem itemValue="Good" itemLabel="Good" />
+                            <f:selectItem itemValue="Fair" itemLabel="Fair" />
+                            <f:selectItem itemValue="Poor" itemLabel="Poor" />
+                        </h:selectOneRadio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        25. How many hours did you spend per week on preparation/homework for this course?
+                    </td>
+                    <td>
+                        <h:selectOneRadio value="#{module6.q4}">
+                            <f:selectItem itemValue="A: 0 - 4h" itemLabel="A: 0 - 4h" />
+                            <f:selectItem itemValue="B: 5 - 8h" itemLabel="B: 5 - 8h" />
+                            <f:selectItem itemValue="C: 9 - 12h" itemLabel="C: 9 - 12h" />
+                            <f:selectItem itemValue="D: 12 - 16h" itemLabel="D: 12 - 16h" />
+                        </h:selectOneRadio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Comments (Student Self Evaluation) 
+                    </td>
+                    <td>
+                        <h:inputTextarea id="txtComments" value="#{module6.q5}"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        <h:commandButton id="cmdNext" class="btn btn-primary btn-lg btn-block" value="NEXT" action="#{module6.next}" />
+    </h:form>
+    </h:body>
+</html>
+
