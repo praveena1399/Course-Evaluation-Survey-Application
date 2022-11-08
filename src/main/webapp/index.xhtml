@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>KasuProject-4</title>
+        <!--<link rel="stylesheet" href="index.css" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </h:head>
+    <h:body>
+        <!-- <h:form class="login-form">
+            <h1>Login Page</h1>
+        <table class="login-table">
+                <tr>
+                    <td>
+                        <h:outputLabel for="txtUsername" class="">
+                            <h:outputText value="Enter Username: " class=""/>
+                        </h:outputLabel>
+                    </td>
+                    <td>
+                        <h:inputText id="txtUsername" value="#{user.name}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h:outputLabel for="txtPassword">
+                            <h:outputText value="Enter Password: " />
+                        </h:outputLabel> 
+                    </td>
+                    <td>
+                        <h:inputText id="txtPassword" value="#{user.password}"/>
+                    </td>
+                </tr>
+            </table>
+        <h:commandButton id="cmdLogin" class="btn btn-primary btn-block mb-4" value="Login" action="#{user.login}" />
+    </h:form> -->
+
+    <div class="container">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        
+
+        <h:form>
+            
+            <div class="form-outline mb-4">
+                <h:inputText id="txtUsername" class="form-control" value="#{user.name}"/>
+                <label class="form-label" for="txtUsername">Email ID:</label>
+            </div>
+        
+        
+            <div class="form-outline mb-4">
+                <h:inputText id="txtPassword" type="password" class="form-control" value="#{user.password}"/>
+            <label class="form-label" for="txtPassword">Password</label>
+            </div>
+            
+            <h:commandButton id="cmdLogin" class="btn btn-primary btn-block mb-4" value="Login" action="#{user.login}" />
+        </h:form>
+      </div>
+
+      
+    </h:body>
+</html>
+
